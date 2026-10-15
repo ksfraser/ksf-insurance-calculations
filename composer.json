@@ -1,0 +1,33 @@
+{
+    "name": "ksfraser/insurance-calculations",
+    "version": "1.0.0",
+    "description": "Business Logic Package for Insurance Calculations - FNA (Financial Needs Analysis), Life Insurance, Critical Illness, and Disability calculations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Fraser",
+            "email": "kevin@frgr.ca"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ksfraser/modules-common": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KSFII\\Insurance\\": "src/Insurance/",
+            "KSFII\\FrontAccounting\\FNA\\": "src/FrontAccounting/FNA/",
+            "KSFII\\FrontAccounting\\Services\\": "src/FrontAccounting/Services/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../..",
+            "options": {
+                "symlink": false
+            }
+        }
+    ]
+}
